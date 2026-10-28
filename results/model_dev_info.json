@@ -1,0 +1,138 @@
+{
+  "seasons": 24,
+  "features": [
+    "ndvi_peak",
+    "ndvi_peak_doy",
+    "ndvi_integral",
+    "greenup_rate",
+    "gdd",
+    "hot_windows",
+    "tmax_avg",
+    "precip_total",
+    "radiation_total"
+  ],
+  "windows_per_season_by_cutoff": {
+    "1 Jul": [
+      5,
+      6
+    ],
+    "1 Aug": [
+      7,
+      8
+    ],
+    "1 Sep": [
+      9,
+      10
+    ],
+    "1 Oct": [
+      11,
+      12
+    ]
+  },
+  "chosen_hyperparameters_count": {
+    "ridge|detrended": {
+      "100.0": 8,
+      "30.0": 2
+    },
+    "elastic_net|detrended": {
+      "0.1": 7,
+      "0.03": 2,
+      "0.01": 1
+    },
+    "random_forest|detrended": {
+      "2.0, 2.0": 5,
+      "2.0, 4.0": 4,
+      "3.0, 2.0": 1
+    },
+    "gradient_boosting|detrended": {
+      "1.0, 50.0": 7,
+      "2.0, 50.0": 2,
+      "2.0, 150.0": 1
+    },
+    "random_forest|raw_level": {
+      "3.0, 2.0": 6,
+      "2.0, 2.0": 4
+    }
+  },
+  "ridge_alpha_on_full_data": 100,
+  "ridge_loyo_mae_all_features": 0.326,
+  "sensitivity_without_flagged_iowa_soybean_2022": [
+    {
+      "scheme": "leave_one_year_out",
+      "model": "gradient_boosting",
+      "features": "detrended",
+      "mae": 0.314,
+      "rmse": 0.469,
+      "mape_pct": 4.36,
+      "mae_corn": 0.393,
+      "mae_soybean": 0.226,
+      "n_predictions": 23
+    },
+    {
+      "scheme": "leave_one_year_out",
+      "model": "random_forest",
+      "features": "detrended",
+      "mae": 0.33,
+      "rmse": 0.468,
+      "mape_pct": 4.54,
+      "mae_corn": 0.42,
+      "mae_soybean": 0.231,
+      "n_predictions": 23
+    },
+    {
+      "scheme": "leave_one_year_out",
+      "model": "ridge",
+      "features": "detrended",
+      "mae": 0.331,
+      "rmse": 0.454,
+      "mape_pct": 4.61,
+      "mae_corn": 0.412,
+      "mae_soybean": 0.242,
+      "n_predictions": 23
+    },
+    {
+      "scheme": "leave_one_year_out",
+      "model": "linear_trend",
+      "features": "none",
+      "mae": 0.337,
+      "rmse": 0.45,
+      "mape_pct": 4.51,
+      "mae_corn": 0.441,
+      "mae_soybean": 0.224,
+      "n_predictions": 23
+    },
+    {
+      "scheme": "leave_one_year_out",
+      "model": "elastic_net",
+      "features": "detrended",
+      "mae": 0.35,
+      "rmse": 0.458,
+      "mape_pct": 4.69,
+      "mae_corn": 0.456,
+      "mae_soybean": 0.234,
+      "n_predictions": 23
+    },
+    {
+      "scheme": "leave_one_year_out",
+      "model": "region_crop_mean",
+      "features": "none",
+      "mae": 0.374,
+      "rmse": 0.565,
+      "mape_pct": 4.55,
+      "mae_corn": 0.542,
+      "mae_soybean": 0.191,
+      "n_predictions": 23
+    },
+    {
+      "scheme": "leave_one_year_out",
+      "model": "previous_season",
+      "features": "none",
+      "mae": 0.449,
+      "rmse": 0.654,
+      "mape_pct": 5.74,
+      "mae_corn": 0.618,
+      "mae_soybean": 0.266,
+      "n_predictions": 23
+    }
+  ]
+}

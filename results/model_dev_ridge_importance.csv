@@ -1,0 +1,10 @@
+feature,coef_pct_per_sd,same_sign_share_of_folds,mae_increase_when_dropped
+ndvi_peak,-0.13,1.0,0.0347
+ndvi_integral,-0.043,0.83,0.0035
+greenup_rate,-0.055,0.83,0.0021
+ndvi_peak_doy,0.171,1.0,-0.003
+radiation_total,-0.091,0.83,-0.0054
+tmax_avg,0.286,0.83,-0.0063
+precip_total,-0.005,0.67,-0.011
+hot_windows,0.17,0.67,-0.0111
+gdd,0.104,0.83,-0.0131

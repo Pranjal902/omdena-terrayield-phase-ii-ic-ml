@@ -1,0 +1,106 @@
+{
+  "V-01 satellite values identical across crops": {
+    "groups": 290,
+    "differing_cells": 0
+  },
+  "V-02 year-over-year match within +/-10 days": {
+    "rows": 290,
+    "unmatched": 46,
+    "unmatched_share": 0.159,
+    "unmatched_by_year": {
+      "2020": 46
+    }
+  },
+  "V-03 window backbone": {
+    "windows_per_region": {
+      "US-Illinois": 145,
+      "US-Iowa": 145
+    },
+    "windows_per_year": {
+      "2020": 23,
+      "2021": 23,
+      "2022": 23,
+      "2023": 23,
+      "2024": 23,
+      "2025": 22,
+      "2026": 8
+    },
+    "same_for_both_regions": true
+  },
+  "V-04 window-over-window delta coverage": {
+    "rows": 290,
+    "nan_after_first_difference": 2
+  },
+  "V-05 cloud_cover_pct placeholder": {
+    "distinct_values": [
+      -1
+    ],
+    "rows_equal_minus_one": 580,
+    "rows": 580
+  },
+  "V-06 EVI and NDVI minimum ranges": {
+    "evi_min_below_minus_one": 574,
+    "evi_max_above_one": 580,
+    "evi_min_lowest_value": -17137925.0,
+    "ndvi_min_exactly_minus_one": 462,
+    "ndvi_min_below_minus_one": 0,
+    "rows": 580
+  },
+  "V-07 NDBI and NDWI": {
+    "ndbi_range": [
+      -0.8024,
+      0.2406
+    ],
+    "ndwi_range": [
+      -0.8193,
+      0.006
+    ],
+    "ndbi_min_abs_denominator": 0.4522,
+    "ndwi_min_abs_denominator": 0.2737,
+    "nan_values": 0,
+    "outside_minus_one_to_one": 0
+  },
+  "V-08 which 580-row snapshot": {
+    "master_dataset_columns": 154,
+    "gold_candidate_columns": 81,
+    "master_cloud_cover_range": [
+      -1.0,
+      -1.0
+    ],
+    "gold_cloud_cover_range": [
+      14.2,
+      100.0
+    ]
+  },
+  "extra: weather aggregation method": {
+    "aggregation_method_values": {
+      "max": 580
+    }
+  },
+  "extra: yield values across snapshots": {
+    "seasons_compared": 24,
+    "seasons_that_differ": [
+      {
+        "region": "US-Illinois",
+        "crop": "corn",
+        "year": 2022,
+        "master": 13.432,
+        "gold": 12.909
+      },
+      {
+        "region": "US-Illinois",
+        "crop": "soybean",
+        "year": 2022,
+        "master": 4.237,
+        "gold": 3.986
+      },
+      {
+        "region": "US-Iowa",
+        "crop": "soybean",
+        "year": 2022,
+        "master": 3.934,
+        "gold": 3.632
+      }
+    ]
+  }
+}

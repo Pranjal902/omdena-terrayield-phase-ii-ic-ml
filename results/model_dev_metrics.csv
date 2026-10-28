@@ -1,0 +1,17 @@
+scheme,model,features,mae,rmse,mape_pct,mae_corn,mae_soybean,n_predictions
+expanding_window,previous_season,none,0.261,0.332,4.25,0.267,0.256,16
+expanding_window,region_crop_mean,none,0.422,0.514,4.74,0.666,0.178,16
+expanding_window,random_forest,detrended,0.454,0.676,6.66,0.564,0.344,16
+expanding_window,ridge,detrended,0.457,0.68,6.75,0.561,0.354,16
+expanding_window,gradient_boosting,detrended,0.459,0.662,6.93,0.543,0.374,16
+expanding_window,elastic_net,detrended,0.494,0.701,6.92,0.648,0.34,16
+expanding_window,linear_trend,none,0.494,0.701,6.92,0.648,0.34,16
+expanding_window,random_forest,raw_level,0.59,0.712,8.31,0.757,0.423,16
+leave_one_year_out,gradient_boosting,detrended,0.314,0.46,4.31,0.417,0.211,24
+leave_one_year_out,random_forest,detrended,0.315,0.466,4.37,0.415,0.215,24
+leave_one_year_out,ridge,detrended,0.326,0.457,4.63,0.414,0.238,24
+leave_one_year_out,linear_trend,none,0.327,0.441,4.42,0.441,0.213,24
+leave_one_year_out,elastic_net,detrended,0.342,0.451,4.68,0.454,0.23,24
+leave_one_year_out,region_crop_mean,none,0.376,0.559,4.81,0.542,0.209,24
+leave_one_year_out,random_forest,raw_level,0.407,0.555,5.52,0.551,0.264,24
+leave_one_year_out,previous_season,none,0.457,0.651,6.21,0.618,0.296,24

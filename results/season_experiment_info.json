@@ -1,0 +1,61 @@
+{
+  "seasons": 24,
+  "windows_per_season": {
+    "growing": [
+      8,
+      9
+    ],
+    "post_harvest": [
+      1,
+      2
+    ]
+  },
+  "feature_vs_gap_to_trend_correlation": {
+    "growing": {
+      "ndvi_avg": 0.15,
+      "ndvi_peak": -0.22,
+      "savi_avg": 0.15,
+      "tmax_avg": 0.43,
+      "precip_total": 0.19,
+      "radiation_total": -0.11
+    },
+    "post_harvest": {
+      "ndvi_avg": 0.31,
+      "ndvi_peak": 0.38,
+      "savi_avg": 0.31,
+      "tmax_avg": 0.58,
+      "precip_total": -0.14,
+      "radiation_total": 0.03
+    }
+  },
+  "trend_plus_ridge_mae_by_alpha": {
+    "leave_one_year_out": {
+      "growing": {
+        "0.3": 0.297,
+        "1.0": 0.265,
+        "3.0": 0.244,
+        "10.0": 0.252
+      },
+      "post_harvest": {
+        "0.3": 0.432,
+        "1.0": 0.39,
+        "3.0": 0.366,
+        "10.0": 0.341
+      }
+    },
+    "expanding_window": {
+      "growing": {
+        "0.3": 0.582,
+        "1.0": 0.521,
+        "3.0": 0.465,
+        "10.0": 0.418
+      },
+      "post_harvest": {
+        "0.3": 0.654,
+        "1.0": 0.645,
+        "3.0": 0.614,
+        "10.0": 0.553
+      }
+    }
+  }
+}
